@@ -163,7 +163,7 @@ VITE_API_URL=http://localhost:8080`}
               </>
           ) : (
               <div className="login-container">
-                <h1>💰 Money App</h1>
+                <h1>Money App</h1>
 
                 <p>
                   Gestiona tus gastos de manera fácil y rápida
