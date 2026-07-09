@@ -1,0 +1,11 @@
+{
+  "app": {
+    "title": "Money App",
+    "subtitle": "Gestiona tus gastos de manera fácil y rápida"
+  },
+
+  "languages": {
+    "es": "Español",
+    "en": "English"
+  }
+}
