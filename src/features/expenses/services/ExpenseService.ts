@@ -1,7 +1,8 @@
 // features/expenses/services/expenseService.ts
 import { Expense, CreateExpenseDTO, UpdateExpenseDTO } from '../types'
+import { API_URL } from "../../../config/api";
 
-const BASE_URL = '/api/expenses';
+const BASE_URL = `${API_URL}/api/expenses`;
 
 async function handleResponse<T>(response: Response): Promise<T> {
     // Log para debugging
