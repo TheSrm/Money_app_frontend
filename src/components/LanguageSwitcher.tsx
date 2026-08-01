@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ChevronDown } from "lucide-react";
+import { Check } from "lucide-react";
 
 export const LanguageSwitcher = () => {
     const { t, i18n } = useTranslation();
@@ -14,33 +14,30 @@ export const LanguageSwitcher = () => {
     return (
         <div className="relative inline-block group">
             <button
-                className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600
-                           text-white font-semibold rounded-lg shadow-lg hover:shadow-xl
-                           hover:from-blue-600 hover:to-blue-700 transition-all duration-200
-                           focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+                className="flex items-center gap-2 px-2.5 py-1.5 text-sm font-medium
+                           text-foreground hover:text-primary transition-colors duration-150"
             >
-                <span className="text-lg">{currentLang?.flag}</span>
-                <span>{currentLang?.label}</span>
-                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+                <span className="text-base">{currentLang?.flag}</span>
             </button>
 
-            <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-2xl
-                          border border-gray-100 opacity-0 invisible group-hover:opacity-100
-                          group-hover:visible transition-all duration-200 py-2 z-50">
+            <div className="absolute right-0 bottom-full mb-2 w-44 bg-background rounded-lg shadow-xl
+                          border border-border opacity-0 invisible group-hover:opacity-100
+                          group-hover:visible transition-all duration-200 py-2 z-50
+                          group-hover:-translate-y-1">
                 {languages.map((lang) => (
                     <button
                         key={lang.code}
                         onClick={() => i18n.changeLanguage(lang.code)}
-                        className={`w-full px-4 py-3 flex items-center gap-3 text-left font-medium
-                                   transition-colors duration-150 hover:bg-blue-50
+                        className={`w-full px-4 py-2.5 flex items-center gap-3 text-sm
+                                   transition-colors duration-150
                                    ${i18n.resolvedLanguage === lang.code
-                            ? 'bg-blue-100 text-blue-700 border-l-4 border-blue-500'
-                            : 'text-gray-700 hover:text-blue-600'}`}
+                            ? 'bg-primary/10 text-primary font-medium'
+                            : 'text-foreground hover:bg-accent'}`}
                     >
-                        <span className="text-xl">{lang.flag}</span>
+                        <span className="text-base">{lang.flag}</span>
                         <span>{lang.label}</span>
                         {i18n.resolvedLanguage === lang.code && (
-                            <span className="ml-auto text-blue-500">✓</span>
+                            <Check className="ml-auto w-4 h-4" />
                         )}
                     </button>
                 ))}

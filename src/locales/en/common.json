@@ -1,6 +1,28 @@
 {
-  "languages": {
-  "es": "Español",
-  "en": "English"
+  "app": {
+    "title": "Fina",
+    "subtitle": "Manage your finances with ease"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "continue": "Continue",
+    "signInWithGoogle": "Sign in with Google",
+    "loading": "Loading...",
+    "errors": {
+      "noGoogleId": "The server did not return googleId",
+      "loginFailed": "Error logging in. Please try again.",
+      "googleLoginFailed": "Error logging in with Google"
+    }
+  },
+  "header": {
+    "features": "Features",
+    "howItWorks": "How it works",
+    "security": "Security",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "languages" : {
+    "es": "Español",
+    "en": "English"
   }
 }

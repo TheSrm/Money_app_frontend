@@ -1,3 +1,29 @@
 {
+  "app": {
+    "title": "Fina",
+    "subtitle": "Gestiona tus finanzas con facilidad"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "continue": "Continuar",
+    "signInWithGoogle": "Iniciar sesión con Google",
+    "loading": "Cargando...",
+    "errors": {
+      "noGoogleId": "El servidor no devolvió googleId",
+      "loginFailed": "Error al iniciar sesión. Por favor, intenta nuevamente.",
+      "googleLoginFailed": "Error al iniciar sesión con Google"
+    }
+  },
+  "header": {
+    "features": "Características",
+    "howItWorks": "Cómo funciona",
+    "security": "Seguridad",
+    "signIn": "Iniciar sesión",
+    "getStarted": "Empezar gratis"
+  },
 
+  "languages" : {
+    "es": "Español",
+    "en": "English"
+  }
 }

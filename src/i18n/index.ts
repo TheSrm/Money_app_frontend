@@ -5,8 +5,6 @@ import { initReactI18next } from "react-i18next";
 import esCommon from "../locales/es/common.json";
 import enCommon from "../locales/en/common.json";
 
-import esLogin from "../locales/es/login.json";
-import enLogin from "../locales/en/login.json";
 
 
 i18n
@@ -18,14 +16,12 @@ i18n
             es: {
                 translation: {
                     ...esCommon,
-                    ...esLogin,
                 },
             },
 
             en: {
                 translation: {
                     ...enCommon,
-                    ...enLogin,
                 },
             },
         },
